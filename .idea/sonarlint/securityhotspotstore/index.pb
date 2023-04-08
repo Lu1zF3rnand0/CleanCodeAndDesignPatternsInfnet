@@ -4,12 +4,8 @@
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 X
 (src/main/java/primeira_entrega/Main.java,f\2\f26b6eeed89c66098dd6c16a61e05eb8d1d5c888
-]
--.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 ^
 .src/main/java/primeira_entrega/service/Rh.java,7\b\7bcfc2f73d7e51bc882067ad2f4296589e36f270
 _
@@ -24,8 +20,6 @@ f
 6src/main/java/primeira_entrega/model/IFuncionario.java,1\6\166b4d40f3594a2bb4ec6600c8676c72a4377b85
 ^
 .src/main/java/segunda_entrega/vo/Endereco.java,f\5\f5e0493bde43270018bf205827a89280d313b98f
-^
-.src/main/java/segunda_entrega/vo/Telefone.java,e\9\e9399b831c39ff534c1c0e86fb9bc33bf545dfff
 ^
 .src/main/java/segunda_entrega/enums/Setor.java,c\0\c09b173f919eed68f39ff5ca3414e3fabd7e6353
 ^

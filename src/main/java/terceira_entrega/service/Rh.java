@@ -1,13 +1,13 @@
-package segunda_entrega.service;
+package terceira_entrega.service;
 
-import segunda_entrega.model.FuncionarioTerceirizado;
-import segunda_entrega.model.IFuncionario;
+import terceira_entrega.model.FuncionarioTerceirizado;
+import terceira_entrega.model.IFuncionario;
 
 import java.util.List;
 
 public class Rh {
 
-    public boolean verificarSeInstanciaNaoEhFuncionarioTerceirizado(IFuncionario funcionario){
+    public boolean verificarSeInstanciaNaoEhFuncionarioTerceirizado(IFuncionario funcionario) {
         return !(funcionario instanceof FuncionarioTerceirizado);
     }
 
