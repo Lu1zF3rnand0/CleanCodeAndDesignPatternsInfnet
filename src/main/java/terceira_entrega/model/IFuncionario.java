@@ -21,4 +21,6 @@ public interface IFuncionario {
     Cargo getCargo();
 
     String toString();
+
+    void setSalario(double salario);
 }

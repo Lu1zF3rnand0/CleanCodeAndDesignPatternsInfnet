@@ -29,7 +29,10 @@ public class Main {
 
         Rh rh = Rh.getInstancia();
 
+        funcionario.adicionarObservador(rh);
         rh.reajustarSalario(funcionario, 20);
+
+        funcionarioTerceirizado.adicionarObservador(rh);
         rh.reajustarSalario(funcionarioTerceirizado, 20);
 
         System.out.println(funcionario);
