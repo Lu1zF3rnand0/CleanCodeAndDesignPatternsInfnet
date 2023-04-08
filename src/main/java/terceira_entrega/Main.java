@@ -27,7 +27,7 @@ public class Main {
                 .tempoPrevistoPermanencia(6)
                 .build();
 
-        Rh rh = new Rh();
+        Rh rh = Rh.getInstancia();
 
         rh.reajustarSalario(funcionario, 20);
         rh.reajustarSalario(funcionarioTerceirizado, 20);

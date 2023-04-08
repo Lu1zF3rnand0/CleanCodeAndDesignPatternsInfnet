@@ -7,6 +7,18 @@ import java.util.List;
 
 public class Rh {
 
+    private static Rh instancia = null;
+
+    private Rh() {
+    }
+
+    public static Rh getInstancia() {
+        if (instancia == null) {
+            instancia = new Rh();
+        }
+        return instancia;
+    }
+
     public boolean verificarSeInstanciaNaoEhFuncionarioTerceirizado(IFuncionario funcionario) {
         return !(funcionario instanceof FuncionarioTerceirizado);
     }
