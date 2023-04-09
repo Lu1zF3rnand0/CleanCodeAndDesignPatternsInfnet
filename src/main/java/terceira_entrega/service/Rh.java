@@ -1,7 +1,7 @@
 package terceira_entrega.service;
 
 import terceira_entrega.model.FuncionarioTerceirizado;
-import terceira_entrega.model.IFuncionario;
+import terceira_entrega.model.interfaces.IFuncionario;
 import terceira_entrega.observer.FuncionarioObserver;
 
 import java.util.List;

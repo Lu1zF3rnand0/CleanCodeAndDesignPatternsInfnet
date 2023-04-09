@@ -2,6 +2,8 @@ package terceira_entrega.model;
 
 import terceira_entrega.enums.Cargo;
 import terceira_entrega.enums.Setor;
+import terceira_entrega.model.interfaces.IFuncionario;
+import terceira_entrega.model.interfaces.IFuncionarioComponente;
 import terceira_entrega.observer.FuncionarioObserver;
 import terceira_entrega.vo.Endereco;
 import terceira_entrega.vo.Telefone;
@@ -9,14 +11,13 @@ import terceira_entrega.vo.Telefone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Funcionario implements IFuncionario {
+public class Funcionario implements IFuncionario, IFuncionarioComponente {
     private final String nome;
     private final List<Telefone> telefones;
     private final Endereco endereco;
     private double salario;
     private final Setor setor;
     private final Cargo cargo;
-
     private final List<FuncionarioObserver> observadores = new ArrayList<>();
 
     public Funcionario(String nome, List<Telefone> telefones, Endereco endereco, double salario, Setor setor, Cargo cargo) {
@@ -40,6 +41,11 @@ public class Funcionario implements IFuncionario {
         for (FuncionarioObserver observador : observadores) {
             observador.notificarReajuste(this);
         }
+    }
+
+    @Override
+    public void exibirInformacoes() {
+        System.out.println("Funcionário: " + getNome() + ", Setor: " + getSetor() + ", Cargo: " + getCargo());
     }
     @Override
     public void setSalario(double salario) {

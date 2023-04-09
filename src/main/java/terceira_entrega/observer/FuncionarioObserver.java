@@ -1,6 +1,6 @@
 package terceira_entrega.observer;
 
-import terceira_entrega.model.IFuncionario;
+import terceira_entrega.model.interfaces.IFuncionario;
 
 public interface FuncionarioObserver {
     void notificarReajuste(IFuncionario funcionario);

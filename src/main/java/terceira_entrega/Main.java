@@ -3,6 +3,7 @@ package terceira_entrega;
 import terceira_entrega.builder.FuncionarioTerceirizadoBuilder;
 import terceira_entrega.enums.Cargo;
 import terceira_entrega.enums.Setor;
+import terceira_entrega.model.Equipe;
 import terceira_entrega.model.Funcionario;
 import terceira_entrega.model.FuncionarioTerceirizado;
 import terceira_entrega.service.Rh;
@@ -29,10 +30,19 @@ public class Main {
 
         Rh rh = Rh.getInstancia();
 
-        funcionario.adicionarObservador(rh);
-        rh.reajustarSalario(funcionario, 20);
+        Equipe equipeA = new Equipe("Equipe A");
 
+        funcionario.adicionarObservador(rh);
         funcionarioTerceirizado.adicionarObservador(rh);
+
+        equipeA.adicionarFuncionario(funcionario);
+        equipeA.adicionarFuncionario(funcionarioTerceirizado);
+        equipeA.exibirInformacoes();
+
+        funcionario.exibirInformacoes();
+        funcionarioTerceirizado.exibirInformacoes();
+
+        rh.reajustarSalario(funcionario, 20);
         rh.reajustarSalario(funcionarioTerceirizado, 20);
 
         System.out.println(funcionario);

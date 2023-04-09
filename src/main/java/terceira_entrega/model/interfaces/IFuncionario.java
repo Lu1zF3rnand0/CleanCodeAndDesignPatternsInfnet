@@ -1,4 +1,4 @@
-package terceira_entrega.model;
+package terceira_entrega.model.interfaces;
 
 import terceira_entrega.enums.Cargo;
 import terceira_entrega.enums.Setor;
@@ -23,4 +23,5 @@ public interface IFuncionario {
     String toString();
 
     void setSalario(double salario);
+
 }

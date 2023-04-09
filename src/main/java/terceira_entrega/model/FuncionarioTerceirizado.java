@@ -24,4 +24,9 @@ public class FuncionarioTerceirizado extends Funcionario {
                 ", tempoPrevistoPermanencia=" + tempoPrevistoPermanencia +
                 "} ";
     }
+
+    @Override
+    public void exibirInformacoes() {
+        System.out.println("Funcionário Terceirizado: " + getNome() + ", Setor: " + getSetor() + ", Cargo: " + getCargo());
+    }
 }
