@@ -24,4 +24,12 @@ public class FuncionarioTerceirizado extends Funcionario {
     public int getTempoPrevistoPermanencia() {
         return tempoPrevistoPermanencia;
     }
+
+    @Override
+    public String toString() {
+        return "FuncionarioTerceirizado{" + super.toString() +
+                "empresaContratada='" + empresaContratada + '\'' +
+                ", tempoPrevistoPermanencia=" + tempoPrevistoPermanencia +
+                "} ";
+    }
 }

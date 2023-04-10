@@ -55,4 +55,25 @@ public class FuncionarioTerceirizado implements IFuncionario {
     public Cargo getCargo() {
         return cargo;
     }
+
+    public String getEmpresaContratada() {
+        return empresaContratada;
+    }
+
+    public int getTempoPrevistoPermanencia() {
+        return tempoPrevistoPermanencia;
+    }
+
+    @Override
+    public String toString() {
+        return "FuncionarioTerceirizado{" + super.toString() +
+                "empresaContratada='" + empresaContratada + '\'' +
+                ", tempoPrevistoPermanencia=" + tempoPrevistoPermanencia +
+                "} ";
+    }
+
+    @Override
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
 }

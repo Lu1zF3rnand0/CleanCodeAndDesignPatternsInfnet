@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Equipe implements IFuncionarioComponente {
-    private String nome;
-    private List<IFuncionarioComponente> funcionarios = new ArrayList<>();
+    private final String nome;
+    private final List<IFuncionarioComponente> funcionarios = new ArrayList<>();
 
     public Equipe(String nome) {
         this.nome = nome;

@@ -19,4 +19,6 @@ public interface IFuncionario {
     Setor getSetor();
 
     Cargo getCargo();
+
+    void setSalario(double salario);
 }

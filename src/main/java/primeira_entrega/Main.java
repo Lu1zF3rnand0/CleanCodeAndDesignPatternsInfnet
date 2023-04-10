@@ -15,12 +15,20 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        IFuncionario funcionario1 = new Funcionario("João", Arrays.asList("11111111", "22222222"), "Rua A, 123", 2000, Setor.DESENVOLVIMENTO, Cargo.PLENO);
-        IFuncionario funcionario2 = new FuncionarioTerceirizado("Maria", Collections.singletonList("33333333"), "Rua B, 456", 1500, Setor.DEVOPS, Cargo.JUNIOR, "Empresa XYZ", 12);
+        Funcionario funcionario1 = new Funcionario("João", Arrays.asList("21 1111-1111", "21 2222-2222"), "Rua A, 123", 2000, Setor.DESENVOLVIMENTO, Cargo.PLENO);
+        FuncionarioTerceirizado funcionario2 = new FuncionarioTerceirizado("Maria", Collections.singletonList("11 3333-3333"), "Rua B, 456", 1500, Setor.DEVOPS, Cargo.JUNIOR, "Empresa XYZ", 12);
 
         List<IFuncionario> funcionarios = new ArrayList<>();
         funcionarios.add(funcionario1);
         funcionarios.add(funcionario2);
+
+        System.out.println(funcionario1);
+        System.out.println(funcionario2);
+
+        System.out.println(funcionario1.getTelefones());
+
+        System.out.println(funcionario2.getEmpresaContratada());
+        System.out.println(funcionario2.getTempoPrevistoPermanencia());
 
         Rh rh = new Rh();
 

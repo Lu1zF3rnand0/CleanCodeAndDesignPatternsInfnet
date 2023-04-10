@@ -11,7 +11,7 @@ public class Funcionario implements IFuncionario {
     private final String nome;
     private final List<Telefone> telefones;
     private final Endereco endereco;
-    private final double salario;
+    private double salario;
     private final Setor setor;
     private final Cargo cargo;
 
@@ -52,5 +52,22 @@ public class Funcionario implements IFuncionario {
     @Override
     public Cargo getCargo() {
         return cargo;
+    }
+
+    @Override
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "nome='" + nome + '\'' +
+                ", telefones=" + telefones +
+                ", endereco=" + endereco +
+                ", salario=" + salario +
+                ", setor=" + setor +
+                ", cargo=" + cargo +
+                '}';
     }
 }

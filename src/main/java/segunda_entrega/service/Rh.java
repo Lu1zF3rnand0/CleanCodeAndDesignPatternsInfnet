@@ -14,6 +14,7 @@ public class Rh {
     public void reajustarSalario(IFuncionario funcionario, double percentualReajuste) {
         if (verificarSeInstanciaNaoEhFuncionarioTerceirizado(funcionario)) {
             double novoSalario = funcionario.getSalario() * (1 + percentualReajuste / 100);
+            funcionario.setSalario(novoSalario);
             System.out.println("Funcionário " + funcionario.getNome() + " teve seu salário reajustado para " + novoSalario);
         }
 
